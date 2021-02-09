@@ -4,24 +4,16 @@ import { FormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 
 import { AppComponent } from "./app.component";
-import { HelloComponent } from "./hello.component";
-import { MissionControlComponent } from "./mission-control/mission-control.component";
-import { AstronautComponent } from './astronaut/astronaut.component';
-import { MissionService } from './mission.service';
+import { MissionModule } from "./mission/mission.module";
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot([
-      {
-        path: "mission-control",
-        component: MissionControlComponent
-      }
-    ])
+    MissionModule,
+    RouterModule.forRoot([])
   ],
-  declarations: [AppComponent, HelloComponent, MissionControlComponent, AstronautComponent],
-  bootstrap: [AppComponent],
-  providers: [MissionService]
+  declarations: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
