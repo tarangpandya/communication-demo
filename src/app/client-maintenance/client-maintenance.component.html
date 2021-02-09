@@ -1,10 +1,26 @@
-<p>
-  Client Maintenance Header
-</p>
+<div class="card">
+  <div class="container">
+    <div class="row">
+      <p>
+        Client Maintenance Header
+      </p>
+    </div>
+    <div class="row">
+      <div class="col">
+        <app-client-breadcrumb></app-client-breadcrumb>
+      </div>
+      <div class="col">
+        <app-create-referral></app-create-referral>
+      </div>
+    </div>
 
-<ul>
-  <li><a routerLink="/search"> Search </a></li>
-  <li>Demographics</li>
-</ul>
-
-<router-outlet></router-outlet>
+    <div class="row">
+      <div class="col">
+        <app-client-nav></app-client-nav>
+      </div>
+      <div class="col">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
