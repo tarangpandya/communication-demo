@@ -2,10 +2,10 @@
   <div class="container">
     <div class="row">
       <p>
-        Client Maintenance Header
+        Client Maintenance Header for {{clientKey}}
       </p>
     </div>
-    <div class="row">
+    <div *ngIf="clientKey > 0" class="row">
       <div class="col">
         <app-client-breadcrumb></app-client-breadcrumb>
       </div>

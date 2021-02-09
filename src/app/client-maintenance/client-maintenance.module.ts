@@ -9,6 +9,7 @@ import { ClientNavComponent } from "./client-nav/client-nav.component";
 import { ClientBreadcrumbComponent } from "./client-breadcrumb/client-breadcrumb.component";
 import { ClientPhoneComponent } from "./client-phone/client-phone.component";
 import { CreateReferralComponent } from "./create-referral/create-referral.component";
+import { ClientMaintenanceDataService } from "./client-maintenance-data.service";
 
 @NgModule({
   imports: [
@@ -44,6 +45,6 @@ import { CreateReferralComponent } from "./create-referral/create-referral.compo
     ClientPhoneComponent,
     CreateReferralComponent
   ],
-  providers: []
+  providers: [ClientMaintenanceDataService]
 })
 export class ClientMaintenanceModule {}

@@ -6,6 +6,7 @@ import { AppComponent } from "./app.component";
 import { MissionModule } from "./mission/mission.module";
 import { ClientMaintenanceModule } from "./client-maintenance/client-maintenance.module";
 
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -15,6 +16,7 @@ import { ClientMaintenanceModule } from "./client-maintenance/client-maintenance
     RouterModule.forRoot([])
   ],
   declarations: [AppComponent],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  
 })
 export class AppModule {}
